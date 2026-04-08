@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="card">
+    <h2>Search by Account</h2>
+
+    <form method="POST">
+        <input name="acc" placeholder="Enter Account Number" required><br>
+        <button type="submit">Search</button>
+    </form>
+
+    <hr>
+
+    {% for r in results %}
+        <p>
+            {{ r[1] }} {{ r[2] }} {{ r[3] }}<br>
+            {{ r[4] }}, {{ r[5] }}, {{ r[6] }} {{ r[7] }}<br>
+            Acc#: {{ r[8] }}<br>
+            Checking: ${{ r[9] }} | Savings: ${{ r[10] }}
+        </p>
+        <hr>
+    {% endfor %}
+
+    <a href="/teller_tools"><button>Back</button></a>
+</div>
+
+</body>
+</html>

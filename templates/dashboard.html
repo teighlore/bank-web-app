@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="card">
+    <h2>{{ name }}</h2>
+
+    <h3>Checking: ${{ checking }}</h3>
+    <h3>Savings: ${{ savings }}</h3>
+
+    <form method="POST">
+        <input name="amount" placeholder="Transaction Amount" required><br>
+
+        <label>Transaction Type</label><br>
+        <input type="radio" name="type" value="Deposit" checked> Deposit
+        <input type="radio" name="type" value="Withdraw"> Withdraw<br><br>
+
+        <label>Account Type</label><br>
+        <input type="radio" name="acct" value="Checking" checked> Checking
+        <input type="radio" name="acct" value="Savings"> Savings<br><br>
+
+        <button type="submit">Submit Transaction</button>
+    </form>
+
+    <a href="/history"><button>Transaction History</button></a>
+    <a href="/"><button>Logout</button></a>
+</div>
+
+</body>
+</html>

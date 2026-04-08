@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="card">
+    <h2>Transaction History</h2>
+
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Type</th>
+            <th>Account</th>
+            <th>Amount</th>
+        </tr>
+
+        {% for r in rows %}
+        <tr>
+            <td>{{ r[3] }}</td>
+            <td>{{ r[0] }}</td>
+            <td>{{ r[1] }}</td>
+            <td>${{ r[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <a href="/dashboard"><button>Back</button></a>
+</div>
+
+</body>
+</html>

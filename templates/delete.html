@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="card">
+    <h2>Delete Account</h2>
+
+    <form method="POST">
+        <input name="acc" placeholder="Enter Account Number" required><br>
+        <button type="submit" onclick="return confirm('Are you sure?')">
+            Delete Account
+        </button>
+    </form>
+
+    <a href="/teller_tools"><button>Back</button></a>
+</div>
+
+</body>
+</html>

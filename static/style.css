@@ -1,0 +1,49 @@
+body {
+    background: #0f172a;
+    color: white;
+    font-family: Segoe UI;
+    text-align: center;
+}
+
+.card {
+    background: #1e293b;
+    padding: 30px;
+    margin: 60px auto;
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    width: 95%;
+    padding: 10px;
+    margin: 8px;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2563eb;
+}
+
+table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    border-bottom: 1px solid #555;
+}
